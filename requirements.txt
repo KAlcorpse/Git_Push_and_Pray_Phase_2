@@ -1,0 +1,23 @@
+# Minimal, installable dependency set.
+#
+#   run.py  (the benchmarked entry point)  imports ONLY torch and numpy.
+#   Everything below the first block is training / evaluation only and is never
+#   touched during inference.
+#
+# The complete `pip freeze` of the training environment is in pip_freeze.txt,
+# as the submission requirements ask.
+
+# --- inference ---------------------------------------------------------------
+torch==2.13.0
+numpy==2.4.4
+
+# --- training ----------------------------------------------------------------
+torchvision==0.28.0     # only as the LPIPS backbone; not imported by run.py
+lpips==0.1.4            # perceptual loss and reported metric
+scikit-image==0.26.0    # SSIM
+tqdm==4.70.0
+
+# --- evaluation and figures --------------------------------------------------
+scipy==1.18.0           # degradation-model fitting
+matplotlib==3.11.1      # figures in results/
+pillow==12.2.0          # only if inputs are PNG/TIFF instead of .npy
