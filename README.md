@@ -110,7 +110,6 @@ three are weighted.
 | degradation augmentation (+ conditioning) | +0.031 | −0.0011 | +0.0048 |
 | SSIM matched to the scored implementation | −0.050 | +0.0005 | +0.0002 |
 | frequency-domain (FFT) loss | −0.111 | −0.0009 | −0.0005 |
-| the 297 test pairs folded into training | −0.025 | −0.0001 | −0.0012 |
 
 
 The submitted model is the only one that is **best on all three at once**. With
