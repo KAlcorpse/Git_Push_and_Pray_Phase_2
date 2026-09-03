@@ -124,7 +124,7 @@ ever satisfied. We found it by chasing down a confound that had credited the
 gain to something else entirely.
 
 Full tables, the noise floor, the robustness study and every retraction are in
-[`results/metrics.md`](results/metrics.md); the long-form write-up is
+[`results/metrics.md`](results/metrics.md) 
 
 ---
 
