@@ -111,8 +111,7 @@ three are weighted.
 | SSIM matched to the scored implementation | −0.050 | +0.0005 | +0.0002 |
 | frequency-domain (FFT) loss | −0.111 | −0.0009 | −0.0005 |
 | the 297 test pairs folded into training | −0.025 | −0.0001 | −0.0012 |
-| 8× dihedral test-time augmentation | + | + | − (8× the compute) |
-| two-model ensemble | +0.36 | + | 2.2× worse |
+
 
 The submitted model is the only one that is **best on all three at once**. With
 the weighting undisclosed, that is the only position we can defend.
@@ -126,7 +125,6 @@ gain to something else entirely.
 
 Full tables, the noise floor, the robustness study and every retraction are in
 [`results/metrics.md`](results/metrics.md); the long-form write-up is
-[`report.pdf`](report.pdf).
 
 ---
 
